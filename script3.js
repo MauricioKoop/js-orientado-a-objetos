@@ -16,7 +16,7 @@ class aluno {
     }
 
     escrever() {
-        console.log(`Aluno: ${this.nome}, Idade: ${this.idade}, média escolar: ${this.calcularMedia()}`);
+        return `Aluno: ${this.nome}, Idade: ${this.idade}, média escolar: ${this.calcularMedia()}`;
     }
 }
 
@@ -26,4 +26,4 @@ alunoEduardo.adicionarNotas(9);
 alunoEduardo.adicionarNotas(9);
 
 alunoEduardo.calcularMedia();
-alunoEduardo.escrever();
+console.log(alunoEduardo.escrever());
